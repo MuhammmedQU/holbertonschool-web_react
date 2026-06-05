@@ -43,3 +43,14 @@ function createEmployee(salary: number | string): DirectorInterface | TeacherInt
         return new Director();
     }
 }
+
+
+type Subjects = "Math" | "History";
+
+const teachClass = (subject: Subjects) => {
+    if (subject === "Math") {
+        return "Teaching Math";
+    } else if (subject === "History") {
+        return "Teaching History";
+    }
+};
